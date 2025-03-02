@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+.star{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.body{
+    height: 100vh;
+    background-color: #08031e;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.main{
+    width: 90%;
+    height: 80%;
+    /* border: 1px solid #fff; */
+    display: flex;
+}
+.main aside:nth-child(1){
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.main aside:nth-child(2){
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.name{
+    height: 40%;
+    width: 80%;
+    /* border: 1px solid #fff; */
+    border-radius:12px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2d294192;
+    box-shadow: 0px 0px 10px 1px #e0dbf8;
+    
+}
+.name p{
+    font-size: 1.5rem;
+}
+.name p:nth-child(1){
+    font-size: 1rem;
+}
+.photo{
+    height: 60%;
+    width: 50%;
+    border-radius:200px ;
+    border-radius: 50%;
+}
+.photo img{
+    border-radius: 50%;
+}
+.personaldetals{
+    height: 30%;
+    width: 80%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    align-items: center;
+    background-color: #2d294192;
+    box-shadow: 0px 0px 10px 1px #e0dbf8;
+}
+.personaldetals h2{
+    font-size: 1.5rem;
+}
+.pdetails{
+    height: 2%;
+    width: 80%;
+
+    border-radius: 12px;
+    display: flex;;
+    align-items: center;
+}
+.icon{
+   width: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.resume{
+    height: 15%;
+    width: 80%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d294192;
+    box-shadow: 0px 0px 10px 1px #e0dbf8;
+}
+.resumeset{
+    height: 50%;
+    width: 80%;
+}
+.resumeset p{
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(113, 238, 238, 0.707);
+    font-size: 1.6rem;
+    padding: 5px;
+
+}
+.resumeset p:hover{
+    background-color: rgba(205, 100, 246, 0.868);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.marks{
+    height: 30%;
+    width: 90%;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2d294192;
+    box-shadow: 0px 0px 10px 1px #e0dbf8;
+}
+.onlineplatform{
+    height: 25%;
+    width: 90%;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    background-color: #2d294192;
+    box-shadow: 0px 0px 10px 1px #e0dbf8;
+}
+.certificate{
+    height: 25%;
+    width: 90%;
+    border-radius: 12px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2d294192;
+    box-shadow: 0px 0px 10px 1px #e0dbf8;
+}
+.percentage {
+    height:80%;
+    width: 20%;
+}
+
+.circle {
+    width: 90%; /* Adjust as needed */
+    height: 90%; /* Adjust as needed */
+    border-radius: 50%;
+    background: conic-gradient(#4caf50 0% 75%, #ddd 75% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inner-circle {
+    width: 80%; /* Adjust as needed */
+    height: 80%; /* Adjust as needed */
+    border-radius: 50%;
+    background-color: #080223;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage-text {
+    font-size: 24px; /* Adjust as needed */
+    font-weight: bold;
+}
+.marksdetails{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.marksdetails h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.marksset{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.marksset p:nth-child(1){
+    width: 40%;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.marksset span{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.sco{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.onlineplatform h2{
+    font-size: 1.5rem;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.Platforms{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Platforms a{
+    height: 40%;
+    width: 25%;
+    background-color:#ab46ea5d;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+.Platforms a:hover{
+    background-color: #ab46ead6;
+    box-shadow: 0px 0px 0px 1px rgb(243, 247, 244);
+
+}
+.certificate h2{  
+    margin-top: 5px;  
+    font-size: 1.5rem;
+    
+}
+.certificateslist{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.certificateslist a{
+    height: 50px;
+    width: 10%;
+    margin-top:3px ;
+    margin-left: 20px;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+} 
+.certificateslist a:hover{
+    background-color: #1dfb2c92;
+    color: #080223;
+    box-shadow: 0px 0px 0px 1px rgb(243, 247, 244);
+}
+
+.onlineplatform h2{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        height: 250Vh;
+    }
+    main{
+        flex-direction: column;
+    }
+    main aside:nth-child(1){
+        width: 100%;
+        
+    }
+    main aside:nth-child(2){
+        width: 100%;
+    }
+    .marks{
+        flex-direction:column-reverse;
+        padding: 10px;
+    }
+    .marks .marksdetails{
+        width: 100%;
+    }
+    .onlineplatform h2{
+        width: 100%;
+        text-align: center;
+    }
+    /* .Platforms{
+        flex-direction: column;
+        overflow: scroll;
+    } */
+    .Platforms a{
+        margin: 10px;
+        width: 20%;
+    height: 30px;
+        
+    }
+    .marksdetails{
+        width: 90%;
+    }
+
+}
+

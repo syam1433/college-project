@@ -1,0 +1,79 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.maindata{
+  height: 100vh;
+  background-image: url("./assets/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+height: 100px;
+background-color: rgba(255, 255, 255, 0.726);
+width:60%;
+}
+.loginform{
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.loginform form{
+  height: 80%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  gap: 30px;
+}
+.data{
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(1px);
+}
+.loginform p{
+ font-size: 30px;
+ display: flex;
+ justify-content: center;
+ color: white;
+ font-weight: bold;
+}
+.loginform form input{
+  width: 80%;
+  height: 8px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  background-color:aliceblue;
+}
+.loginform form button{
+  width: 30%;
+  height: 18%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(61, 190, 65);
+  font-weight: 700;
+}
+.loginform form button:active{
+  background-color: blue;
+  color: white;
+
+}
+.loginform form p a{
+  font-size: 13px;
+  color: black;
+}

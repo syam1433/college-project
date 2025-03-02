@@ -1,0 +1,29 @@
+.maindiv{
+    background-color: white;
+    background-image: none;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+.listbutton{
+    padding: 20px;
+}
+
+
+
+.button{
+    font-size: 30px;
+    background-color: red;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.button:hover{
+    color: white;
+    background-color: blue;
+}
