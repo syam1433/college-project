@@ -72,4 +72,5 @@ export const useauthstore = create((set) => ({
       console.error("❌ Error fetching student details:", error);
     }
   },
+  
 }));

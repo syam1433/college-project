@@ -3,6 +3,11 @@ import { FaEnvelope, FaPhone, FaLinkedin, FaGithub, FaFilePdf } from "react-icon
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useauthstore } from "./store/authuser";
+import certficate from "./assets/certificate.png";
+import hackerrank from "./assets/hackerrank.svg";
+import codechef from "./assets/cc-logo.svg";
+import leetcode from "./assets/leetcode.png";
+
 
 
 function StudentDash() {
@@ -11,14 +16,12 @@ function StudentDash() {
     const { id } = useParams();
 
     useEffect(() => {
-        console.log("Student ID from URL:", id); // Debugging: Check if ID is received
         if (id) {
           fetchEachStudent(id);
         }
       }, [id]);
 
   if (!student) return <p>Loading student details...</p>;
-
 
 
   return (
@@ -29,7 +32,7 @@ function StudentDash() {
         <aside>
           <div className="name">
             <div className="photo">
-              <img src={student.image} height="100%" width="100%" alt="Student" />
+            <img src={`http://localhost:3000/uploads/${student.id}.jpg`} height="100%" width="100%" alt="Student" />
             </div>
             <p>{student.id}</p>
             <p>{student.name}</p>
@@ -80,20 +83,20 @@ function StudentDash() {
           <div className="onlineplatform">
             <h2>Online Platforms</h2>
             <div className="Platforms">
-              <a href={student.leetcode}><img src="./src/assets/leetcode.png" alt="Leetcode" height="100%" width="100%" /></a>
-              <a href={student.hackerrank}><img src="./src/assets/hackerrank.svg" alt="HackerRank" height="100%" width="100%" /></a>
-              <a href={student.codechef}><img src="./public/cc-logo.svg" alt="CodeChef" height="100%" width="100%" /></a>
+              <a href={student.leetcode}><img src={leetcode} alt="Leetcode" height="100%" width="100%" /></a>
+              <a href={student.hackerrank}><img src={hackerrank} alt="HackerRank" height="100%" width="100%" /></a>
+              <a href={student.codechef}><img src={codechef} alt="CodeChef" height="100%" width="100%" /></a>
             </div>
           </div>
           <div className="certificate">
             <h2>Certificates</h2>
             <div className="certificateslist">
-              <a href={student.certificate1}><img src="./public/certificate.png" alt="Certificate" height="40px" />certificate</a>
-              <a href={student.certificate2}><img src="./public/certificate.png" alt="Certificate" height="40px" />certificate</a>
-              <a href={student.certificate3}><img src="./public/certificate.png" alt="Certificate" height="40px" />certificate</a>
-              <a href={student.certificate4}><img src="./public/certificate.png" alt="Certificate" height="40px" />certificate</a>
-              <a href={student.certificate5}><img src="./public/certificate.png" alt="Certificate" height="40px" />certificate</a>
-              <a href={student.certificate6}><img src="./public/certificate.png" alt="Certificate" height="40px" />certificate</a>
+              <a target="_blank" href={student.certificate1}><img src={certficate} alt="Certificate" height="40px" />certificate</a>
+              <a target="_blank" href={student.certificate2}><img src={certficate} alt="Certificate" height="40px" />certificate</a>
+              <a target="_blank" href={student.certificate3}><img src={certficate} alt="Certificate" height="40px" />certificate</a>
+              <a target="_blank" href={student.certificate4}><img src={certficate} alt="Certificate" height="40px" />certificate</a>
+              <a href={student.certificate5}><img src={certficate} alt="Certificate" height="40px" />certificate</a>
+              <a href={student.certificate6}><img src={certficate} alt="Certificate" height="40px" />certificate</a>
             </div>
           </div>
         </aside>

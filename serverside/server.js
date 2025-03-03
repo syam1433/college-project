@@ -3,6 +3,9 @@ const sql=require("mysql2");
 const cors=require("cors");
 const jwt = require("jsonwebtoken");
 const dotenv=require("dotenv");
+const path = require("path");
+
+
 const {Sequelize,DataTypes}=require("sequelize");
 
 dotenv.config();
@@ -67,6 +70,7 @@ const Student=sequelize.define("studentsdatabasedata",{
 const app=e();
 app.use(e.json());
 app.use(cors());
+app.use("/uploads", e.static(path.join(__dirname, "uploads")));
 
 //proctor login
 app.post("/login", async (req, res) => {
@@ -128,5 +132,7 @@ app.get("/students/:id", async (req, res) => {
         res.status(500).json({ error: "Error fetching student data!" });
     }
 });
+
+
 
 app.listen(3000, () => console.log("🚀 Server running on port 3000"));

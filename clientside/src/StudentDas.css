@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
 .star{
     padding: 0;
     margin: 0;
@@ -17,6 +18,10 @@
     align-items: center;
     flex-direction: column;
     
+}
+.body h1::first-letter{
+    color: #0683f8;
+    font-size: 2.9rem;
 }
 .main{
     width: 90%;
@@ -301,17 +306,17 @@
 
 
 @media screen and (max-width: 768px){
-    body{
+    .body{
         height: 250Vh;
     }
-    main{
+    .main{
         flex-direction: column;
     }
-    main aside:nth-child(1){
+    .main aside:nth-child(1){
         width: 100%;
         
     }
-    main aside:nth-child(2){
+    .main aside:nth-child(2){
         width: 100%;
     }
     .marks{

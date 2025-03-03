@@ -17,21 +17,25 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="maindiv">
-      <h2>Student List</h2>
-      <ul className="list">
-        {students.map((student) => (
-          <button onClick={()=>navigate(`/student/${student.id}`)} className="listbutton">
-            <li key={student.no}>
-            {student.id} - Name: {student.name}
-            </li>
-          </button>
-        ))}
-      </ul>
-      <div>
-        <button onClick={handleLogout} className="button">
-          Logout
-        </button>
+    <div className="star">
+      {/* Header Section */}
+      <div className="headerformate">
+        <div className="herderset">
+          <h1>Student List</h1>
+          <button onClick={handleLogout}>LOG OUT</button>
+        </div>
+      </div>
+
+      {/* Student List Section */}
+      <div className="student-list">
+        <div className="list-items">
+          {students.map((student) => (
+            <a key={student.no} href={`/student/${student.id}`} className="listbutton">
+              <p>{student.id}</p>
+              <p>{student.name}</p>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );

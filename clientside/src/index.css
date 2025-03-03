@@ -47,7 +47,7 @@ width:60%;
  font-size: 30px;
  display: flex;
  justify-content: center;
- color: white;
+ color: black;
  font-weight: bold;
 }
 .loginform form input{
@@ -76,4 +76,9 @@ width:60%;
 .loginform form p a{
   font-size: 13px;
   color: black;
+}
+@media screen and (max-width: 768px){
+  .loginform form{
+    width: 50%;
+  }
 }
